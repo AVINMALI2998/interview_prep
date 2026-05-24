@@ -1,6 +1,6 @@
 package programs.strings;
 
-public class demo {
+public class SubstringChecker {
 
     public static void main(String[] args) {
         String str = "Avinash Mali Java";
