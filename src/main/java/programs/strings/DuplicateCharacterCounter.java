@@ -4,25 +4,20 @@ public class DuplicateCharacterCounter {
     public static void main(String[] args) {
 
         String str = "Avinash Mali Pune";
-        char[] chr = str.toCharArray();
-        boolean[] printed = new boolean[chr.length];
 
-        for (int i = 0; i < chr.length; i++) {
-            if (printed[i]) {
-                continue;
-            }
-
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
             int count = 0;
-            for (int j = i; j < chr.length; j++) {
-                if (chr[i] == chr[j]) {
+
+            for (int j = 0; j < str.length(); j++) {
+                if (ch == str.charAt(j)) {
                     count++;
                 }
             }
 
-            if (count > 1) {
-                System.out.println(chr[i] + " is repeated " + count + " times");
+            if (count > 1 && str.indexOf(ch) == i) {
+                System.out.println(ch + " is repeated " + count + " times");
             }
-            printed[i] = true;
         }
 
     }
