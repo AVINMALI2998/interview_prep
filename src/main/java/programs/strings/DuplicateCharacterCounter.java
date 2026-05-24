@@ -3,22 +3,19 @@ package programs.strings;
 public class DuplicateCharacterCounter {
     public static void main(String[] args) {
 
-        String str = "Avinash Mali Pune";
+        String str = "Avinash Mali TCS";
+        char[] chr = str.toCharArray();
+        int count = 0;
+        for (int i = 0; i < chr.length; i++) {
 
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            int count = 0;
-
-            for (int j = 0; j < str.length(); j++) {
-                if (ch == str.charAt(j)) {
+            for (int j = i + 1; j < chr.length; j++) {
+                if (chr[i] == chr[j]) {
+                    System.out.println(chr[i]);
                     count++;
                 }
             }
-
-            if (count > 1 && str.indexOf(ch) == i) {
-                System.out.println(ch + " is repeated " + count + " times");
-            }
         }
+        System.out.println("repeted character count is " + count);
 
     }
 }
