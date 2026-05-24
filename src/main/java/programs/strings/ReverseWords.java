@@ -7,7 +7,7 @@ package programs.strings;
 public class ReverseWords {
 
     public static void main(String[] args) {
-        String str = "Avinash Mali";
+        String str = "Avinash Mali working for Capgemini";
         String[] words = str.split(" ");
 
         for (String word : words) {
