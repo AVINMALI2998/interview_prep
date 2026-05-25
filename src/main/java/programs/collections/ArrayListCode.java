@@ -4,6 +4,11 @@ import java.util.*;
 
 public class ArrayListCode {
 
+    /*
+     * ArrayList is a resizable array that allows storing elements dynamically and
+     * provides fast access using
+     * indexes.
+     */
     public static void main(String[] args) {
 
         // 1. Create ArrayList
