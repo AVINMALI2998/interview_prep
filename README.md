@@ -1,6 +1,6 @@
 # Interview Prep - Java Project
 
-A Java project for interview preparation and practice.
+A comprehensive Java project for interview preparation with algorithms and data structures practice.
 
 ## Project Structure
 
@@ -8,23 +8,39 @@ A Java project for interview preparation and practice.
 interview_prep/
 ├── src/
 │   ├── main/java/programs/
-│   │   ├── Main.java (Entry point)
-│   │   ├── strings/
-│   │   │   ├── ReverseString.java
-│   │   │   ├── PalindromeChecker.java
-│   │   │   └── AnagramChecker.java
 │   │   ├── arrays/
-│   │   │   ├── SortingAlgorithms.java
-│   │   │   ├── TwoPointerArray.java
-│   │   │   └── ArraySearch.java
-│   │   └── collections/
-│   │       ├── MapOperations.java
-│   │       ├── ListManipulation.java
-│   │       └── SetOperations.java
+│   │   │   ├── DuplicateIntegerInArray.java
+│   │   │   ├── DuplicateStringInArray.java
+│   │   │   ├── FindMaximum.java
+│   │   │   ├── FindMinimum.java
+│   │   │   ├── reversearray.java
+│   │   │   ├── secondlargeNumber.java
+│   │   │   ├── SumOfArray.java
+│   │   │   └── TwoPointerArray.java
+│   │   ├── strings/
+│   │   │   ├── DuplicateCharacterCounter.java
+│   │   │   ├── ReverseString.java
+│   │   │   ├── ReverseWords.java
+│   │   │   ├── StringDemo.java
+│   │   │   ├── StringReplace.java
+│   │   │   ├── StringReversal.java
+│   │   │   ├── StringTrim.java
+│   │   │   ├── SubstringChecker.java
+│   │   │   ├── SwapWords.java
+│   │   │   └── WordReversal.java
+│   │   ├── collections/
+│   │   │   ├── ArrayListCode.java
+│   │   │   ├── HashMapCode.java
+│   │   │   ├── MapOperations.java
+│   │   │   └── SetOperations.java
+│   │   └── general/
+│   │       ├── Armstrong.java
+│   │       ├── Factorial.java
+│   │       ├── Fibonacci.java
+│   │       ├── Palindrome.java
+│   │       ├── PrimeNo.java
+│   │       └── PrintPrimeNumbers.java
 │   └── test/java/programs/
-│       ├── strings/
-│       ├── arrays/
-│       └── collections/
 ├── pom.xml
 └── README.md
 ```
@@ -50,12 +66,6 @@ To run the application:
 mvn exec:java
 ```
 
-Or compile and run:
-
-```bash
-mvn clean compile exec:java
-```
-
 ## Testing
 
 To run tests:
@@ -72,22 +82,51 @@ mvn test
 
 1. Open the project in Visual Studio Code
 2. Build the project with `mvn clean compile`
-3. Run the main application with `mvn exec:java`
-4. Run specific programs by their package:
-   - `mvn exec:java -Dexec.mainClass=programs.strings.ReverseString`
-   - `mvn exec:java -Dexec.mainClass=programs.arrays.SortingAlgorithms`
-   - `mvn exec:java -Dexec.mainClass=programs.collections.MapOperations`
+3. Run specific programs:
+   ```bash
+   mvn exec:java -Dexec.mainClass=programs.arrays.DuplicateIntegerInArray
+   mvn exec:java -Dexec.mainClass=programs.strings.ReverseString
+   mvn exec:java -Dexec.mainClass=programs.collections.MapOperations
+   ```
 
-## Project Organization
-
-### Strings (`programs.strings`)
-String manipulation, pattern matching, and text processing algorithms.
-- ReverseString, PalindromeChecker, AnagramChecker
+## Program Categories
 
 ### Arrays (`programs.arrays`)
-Array operations, sorting, searching, and two-pointer techniques.
-- SortingAlgorithms, TwoPointerArray, ArraySearch
+Array manipulation, duplicate detection, searching, and sorting.
+- **DuplicateIntegerInArray** - Find duplicate integers in array
+- **DuplicateStringInArray** - Find duplicate strings in array
+- **FindMaximum** - Find maximum element
+- **FindMinimum** - Find minimum element
+- **reversearray** - Reverse array elements
+- **secondlargeNumber** - Find second largest number
+- **SumOfArray** - Calculate array sum
+- **TwoPointerArray** - Two-pointer technique
+
+### Strings (`programs.strings`)
+String manipulation, pattern matching, and text processing.
+- **DuplicateCharacterCounter** - Count duplicate characters
+- **ReverseString** - Reverse a string
+- **ReverseWords** - Reverse words in a string
+- **StringDemo** - String demonstrations
+- **StringReplace** - Replace characters/strings
+- **StringReversal** - String reversal techniques
+- **StringTrim** - Trim whitespace
+- **SubstringChecker** - Check for substrings
+- **SwapWords** - Swap words in strings
+- **WordReversal** - Reverse individual words
 
 ### Collections (`programs.collections`)
-Data structures including HashMaps, ArrayLists, Sets, and other Java Collections.
-- MapOperations, ListManipulation, SetOperations
+Data structures and Java Collections Framework.
+- **ArrayListCode** - ArrayList operations
+- **HashMapCode** - HashMap operations
+- **MapOperations** - Map interface operations
+- **SetOperations** - Set interface operations
+
+### General (`programs.general`)
+Mathematical and algorithmic problems.
+- **Armstrong** - Armstrong number checker
+- **Factorial** - Factorial calculation
+- **Fibonacci** - Fibonacci sequence
+- **Palindrome** - Palindrome checker
+- **PrimeNo** - Prime number checker
+- **PrintPrimeNumbers** - Generate prime numbers
