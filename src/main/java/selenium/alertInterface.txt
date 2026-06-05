@@ -1,0 +1,8 @@
+
+// how to handle alert pop up in selenium
+
+Alert alt = driver.switchTo().alert();
+alt.accept();
+alt.dismiss();
+alt.sendKeys("hello");
+alt.getText(); // read alert message
