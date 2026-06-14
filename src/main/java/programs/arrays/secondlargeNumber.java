@@ -4,21 +4,19 @@ public class secondlargeNumber {
 
     public static void main(String[] args) {
 
-        int arr[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 0 };
-
-        int secmax = 0;
+        int[] arr = { 5, 8, 3, 99, 100, 200, 11, 22, 33, 44, 7 };
+        int first = 0;
+        int second = 0;
 
         for (int i = 0; i < arr.length; i++) {
-
-            for (int j = i + 1; j < arr.length; j++) {
-
-                if (arr[i] < arr[j]) {
-
-                    secmax = arr[i];
-                }
-
+            if (arr[i] > first) {
+                second = first;
+                first = arr[i];
+            } else if (arr[i] > second && arr[i] != first) {
+                second = arr[i];
             }
         }
-        System.out.println(secmax);
+
+        System.out.println("Second Largest: " + second);
     }
 }
