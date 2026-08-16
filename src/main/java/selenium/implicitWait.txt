@@ -1,0 +1,10 @@
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+Key Points for Interview:
+
+Applies globally - Works for all findElement() and findElements() calls
+Default is 0 - If not set, WebDriver doesn't wait
+Once set - Remains effective throughout the test
+No need to repeat - Set it once at the start of test
+Used with Selenium 4+ - Duration is the newer approach

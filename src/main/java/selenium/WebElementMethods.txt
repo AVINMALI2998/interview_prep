@@ -1,0 +1,12 @@
+WebElement element = driver.findElement(By.id(""));
+element.click();
+element.clear();
+element.sendKeys();
+element.doubleClick();
+element.getText();
+element.getTagName();
+element.getAttribute();
+element.getSize();
+element.isDisplayed();
+element.isEnabled();
+element.isSelected();

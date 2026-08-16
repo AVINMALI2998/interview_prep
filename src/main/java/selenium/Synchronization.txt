@@ -1,0 +1,2 @@
+Synchronization in Selenium is the process of making Selenium wait until a web 
+element or page is ready before performing any action on it.
