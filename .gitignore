@@ -33,3 +33,6 @@ build/
 
 # Misc
 *.log
+
+# Local interview practice
+/src/main/java/selenium/SeleniumInterviewPractice.md

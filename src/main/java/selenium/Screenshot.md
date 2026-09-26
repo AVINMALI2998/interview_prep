@@ -10,6 +10,10 @@ File file = new File(path);
 FileHandler.copy(src,file);
 ```
 
+## Interview Definition
+
+`TakesScreenshot` is a Selenium interface that provides a WebDriver with screenshot-capture capability. Cast the driver to this interface and call `getScreenshotAs()` to capture the current browser view.
+
 ## Short & Simple Explanation
 
 This code **captures and saves a screenshot** of the web application:
